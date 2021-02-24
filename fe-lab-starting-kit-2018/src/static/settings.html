@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="../fonts/fonts.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Productivity app</title>
+  </head>
+
+  <body>
+
+
+
+    <header class="header header--settings" style="display: flex;">
+      <div class="header__logo">
+        <p class="header__logo-text">Settings</p>
+      </div>
+      <nav class="header__nav">
+        <span class="header__icon-list icon-list "></span>
+        <span class="header__icon-statistics icon-statistics"></span>
+        <span class="header__icon-settings icon-settings choosed-icon"></span>
+      </nav>
+      </header>  
+      
+
+
+      <header class="header header-fixed">
+        <div class="header-fixed__content">
+        <div class="header__logo">
+        <img src="../images/Logo.svg">
+        </div>
+        <nav class="header__nav">
+         <span class="icon-add"></span>
+         <span class="icon-trash "></span>
+          <span class="header__icon-list icon-list "></span>
+          <span class="header__icon-statistics icon-statistics"></span>
+          <span class="header__icon-settings icon-settings choosed-icon"></span>
+        </nav>
+        </div>
+        
+        </header>
+
+<!--   
+<main class="categories-page">
+
+
+  <section class="main-top">
+<div class="main-top__touggle">
+  <span  class="pomodoros-check">Pomodoros</span>
+  <span>|</span>
+  <span class="choose-color">Categories</span> 
+ </div>
+
+<h3 class="main-top__title">Categories list overview</h3>
+  </section>
+
+
+  <section class="categories">
+
+    <div class="category">
+
+    <div class="category__circle">
+      <div class="radio-button">
+      <div class="circle__body">
+          <div class="circle__offal">
+              <div class="circle__center"></div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="category__text-border">
+      <p class="category__text">Work</p>
+    </div>
+   
+
+    </div>
+    <div class="category">
+
+      <div class="category__circle">
+        <div class="radio-button">
+        <div class="circle__body">
+            <div class="circle__offal">
+                <div class="circle__center"></div>
+            </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="category__text-border">
+        <p class="category__text">Education</p>
+      </div>
+     
+  
+      </div>
+    <div class="category">
+
+        <div class="category__circle">
+          <div class="radio-button">
+          <div class="circle__body">
+              <div class="circle__offal">
+                  <div class="circle__center"></div>
+              </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="category__text-border">
+          <p class="category__text">Hobby</p>
+        </div>
+       
+    
+      </div>
+    <div class="category">
+
+        <div class="category__circle">
+          <div class="radio-button">
+          <div class="circle__body">
+              <div class="circle__offal">
+                  <div class="circle__center"></div>
+              </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="category__text-border">
+          <p class="category__text">Sport</p>
+        </div>
+       
+    
+      </div>
+    <div class="category">
+
+        <div class="category__circle">
+          <div class="radio-button">
+          <div class="circle__body">
+              <div class="circle__offal">
+                  <div class="circle__center"></div>
+              </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="category__text-border">
+          <p class="category__text">Other</p>
+        </div>
+       
+    
+        </div>       
+
+
+  </section>
+
+  <section class="button-settings--settings-cayegory">
+    <button class="primary-color">Go to Tasks</button>
+  </section>
+
+
+</main>
+--> 
+
+<main class="pomodoros-page">
+
+  <section class="main-top">
+<div class="main-top__touggle">
+  <span class="choose-color ">Pomodoros</span>
+  <span>|</span>
+  <span class="categories-check">Categories</span> 
+ </div>
+
+<h3 class="main-top__title">Categories list overview</h3>
+  </section>
+
+
+<section class="cycle-settings">
+
+  <div class="settings__container work-time">
+    <div class="settings__container-circle"><div class="category__circle">
+      <div class="radio-button">
+      <div class="circle__body">
+          <div class="circle__offal">
+              <div class="circle__center "></div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="settings__container-content">
+    <h3 class="settings__container-name">Work Time</h3>
+    <div class="settings-input"> <span class="icon-minus work-time-minus"></span><input value="25" disabled/><span class="icon-add work-time-plus"></span></div>
+    <p class="settings__container-describe">Please select a value between 15 and 25 <span>minutes</span></p>
+    
+    
+    </div>
+    
+      </div>
+        <div class="settings__container work-iteration">
+    <div class="settings__container-circle"><div class="category__circle">
+      <div class="radio-button">
+      <div class="circle__body">
+          <div class="circle__offal">
+              <div class="circle__center"></div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="settings__container-content">
+    <h3 class="settings__container-name">Work Iteration</h3>
+    <div class="settings-input"> <span class="icon-minus  work-iteration-minus"></span><input value="5" disabled/><span class="icon-add  work-iteration-plus"></span></div>
+    <p class="settings__container-describe">Please select a value between 2 and 5<span>iterations</span></p>
+    
+    
+    </div>
+    
+      </div>
+
+        <div class="settings__container short-break">
+    <div class="settings__container-circle"><div class="category__circle">
+      <div class="radio-button">
+      <div class="circle__body">
+          <div class="circle__offal">
+              <div class="circle__center"></div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="settings__container-content">
+    <h3 class="settings__container-name">Short Break</h3>
+    <div class="settings-input"> <span class="icon-minus short-break-minus"></span><input value="5" disabled/><span class="icon-add short-break-plus"></span></div>
+    <p class="settings__container-describe">Please select a value between 3 and 15 <span>minutes</span></p>
+    
+    
+    </div>
+    
+      </div>
+        <div class="settings__container long-break">
+    <div class="settings__container-circle"><div class="category__circle">
+      <div class="radio-button">
+      <div class="circle__body">
+          <div class="circle__offal">
+              <div class="circle__center"></div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="settings__container-content">
+    <h3 class="settings__container-name">Long Break</h3>
+    <div class="settings-input"> <span class="icon-minus long-break-minus"></span><input value="15" disabled/><span class="icon-add long-break-plus"></span></div>
+    <p class="settings__container-describe">Please select a value between 15 and 30 <span>minutes</span></p>
+    
+    
+    </div>
+    
+      </div>  
+</section>
+
+<section class="cycle-content">
+  <h3 class="cycle-content__title">Your cycle</h3>
+
+  <div class="cycle-conten__scale-mobile-total">
+  </div>
+  <div class="cycle-conten__scale-total"></div> 
+ <div class="cycle-conten__cycle"></div>
+
+ <div class="cycle-conten__scale-mobile"></div>
+ <div class="cycle-conten__scale"></div>  
+
+</section>
+
+  <section class=button-settings--pomodoros-cayegory>
+    <button class="primary-color button-settings__go">Go to Tasks</button>
+    <button class="success-color button-settings__save">Save</button>
+  </section>
+
+
+</main>
+
+    <script src="../bundle.js"></script>
+  </body>
+</html>

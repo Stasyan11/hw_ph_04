@@ -1,0 +1,78 @@
+/*icons*/
+
+/* helpers */
+@import (reference) "helpers/_variables";
+@import (reference) "helpers/_mixins";
+@import "common/common_settings.less";
+
+
+/* base styles */
+@import "base/_typography";
+@import "base/_normalize";
+
+
+
+
+/* common styles */
+@import "common/categories.less";
+@import "common/_general";
+//@import "common/header.less";
+@import "common/buttons.less";
+@import "common/notification.less";
+
+
+
+
+/*pages*/
+@import "pages/settings.less";
+@import "pages/task_list.less";
+@import "pages/modals.less";
+@import "pages/reports.less";
+@import "pages/timer.less";
+
+
+//@import "../../app/components/header/header/header.less";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.emtpty-tomato{
+    background-image: url(../images/empty-tomato.svg);
+    width: 16px;
+    height:16px;  
+}
+.fill-tomato{
+background-image: url(../images/fill-tomato.svg);
+width: 16px;
+height:16px;  
+}
+.failed-tomato{
+    background-image: url(../images/tomato-failed.svg);  
+}
+
+
+.tomato-4,.tomato-5{
+    background-image: url(../images/empty-tomato.svg);
+    width: 16px;
+    height:16px;
+    &:hover{
+        background-image: url(../images/fill-tomato.svg);
+    }
+  }
+
+  .tomato-1,.tomato-2,.tomato-3{
+     background-image: url(../images/fill-tomato.svg);
+     width: 16px;
+     height:16px;
+   }

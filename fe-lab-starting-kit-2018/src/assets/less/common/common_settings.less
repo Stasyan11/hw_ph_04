@@ -1,0 +1,78 @@
+p,div,nav,header,main,body,h1,h2,h3,h4,h5,h6{
+margin: 0;
+padding: 0;
+}
+
+.choose-color{
+color:white;
+  }
+
+  .circle-mixin(@width:none,@height:none,@color:red){
+    .circle__body{
+      width:@width;
+      height:@height;
+      background-color: @color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .circle__offal{
+        width:50%;
+        height:50%;
+        background-color: @madison;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .circle__center{
+          width:50%;
+          height:50%;
+          background-color: @color;
+          border-radius: 50%;
+        }
+      }
+    }
+  
+  }
+  .circle-mixin-hover(@width:none,@height:none,@color:red){
+    .circle__body{
+      width:@width;
+      height:@height;
+      background-color: @nepal;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+&:hover{
+  background-color:@color;
+}
+    }
+  
+  }
+
+
+  .circle{
+    border-radius: 50%;
+    height: 2vw;
+    width: 4.2%;
+    position: relative;
+    top: 2px;
+    @media (min-width:768px ){
+        height: 16px;
+        width: 16px;
+        top: 0;
+        } 
+    }  
+
+
+
+
+
+
+
+
+
+
+  
+
+

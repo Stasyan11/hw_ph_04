@@ -1,0 +1,169 @@
+.hobby-task {
+    .task-color-modifier(@border-color:@amethyst);
+  }
+  
+  .sport-task {
+    .task-color-modifier(@border-color:@terra-cotta);
+  }
+  .work-task {
+    .task-color-modifier(@border-color:@selective-yellow);
+  }
+  .education-task {
+    .task-color-modifier(@border-color:@malibu);
+  }
+  .other-task {
+    .task-color-modifier(@border-color:@dark-turquoise);
+  }
+  
+  .urgent {
+    .task-color-modifier(@title-color:@tomato,@pomadors-color:@tomato,@hover-pomadors-color:@dark-coral);
+  }
+  .high{
+    .task-color-modifier(@title-color:@carrotOrange,@pomadors-color:@yellowOrange,@hover-pomadors-color:@carrotOrange);
+   
+  }
+  .middle{
+    .task-color-modifier(@title-color:@selective-yellow,@pomadors-color:@gorse,@hover-pomadors-color:@moonYellow);
+  
+  }
+  .low{
+    .task-color-modifier(@title-color:@mountain-meadow,@pomadors-color:@mountain-meadow,@hover-pomadors-color:@mountain-meadow-dark);
+   
+  }
+
+
+  .main-tasks-margins{
+    margin-top: ((25/@width_tablet)*100vw);
+    .tablet-min(@m-t:((26/@width_tablet)*100vw));
+    .desctop-min(@m-t:((40/@width_desctop)*100vw));
+  }
+  
+
+
+  .remove-task-container{
+  
+    .hobby-task {
+      .task-color-modifier(@background-color:@amethyst,@border-size:0);
+    }
+    
+    .sport-task {
+      .task-color-modifier(@background-color:@terra-cotta,@border-size:0);
+    }
+    .work-task {
+      .task-color-modifier(@background-color:@selective-yellow,@border-size:0);
+    }
+    .education-task {
+      .task-color-modifier(@background-color:@malibu,@border-size:0);
+    }
+    .other-task {
+      .task-color-modifier(@background-color:@dark-turquoise,@border-size:0);
+    }
+  
+
+
+
+.remove-task{
+    .task__date-wrapper,.checked-remove-task{
+      border:none;
+      border-right:16px solid @white;
+      .block-mixin(@width-m:88,@width-t:88,@width-d:88);
+      span{
+        font-size:((40/@width)*100vw);
+        .tablet-min(@f-size:((40/@width_tablet)*100vw));
+         .desctop-min(@f-size:((40/@width_desctop)*100vw));
+         color:@white;
+      }
+    }
+  }
+  }
+  
+  .radio-button-categories{
+    >div{
+    :hover{
+      color:@spray;
+    }
+  }
+    .hobby {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@amethyst);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:@amethyst); 
+      }
+    }
+    
+    .sport {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@terra-cotta);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:@terra-cotta); 
+      }
+    }
+    .work {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@selective-yellow);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:red); 
+      }
+    }
+    .education {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@malibu);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:@malibu); 
+      }
+    }
+    .other {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@dark-turquoise);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:@dark-turquoise); 
+      }
+    }
+  }
+
+
+  .radio-button-priority{
+    .urgent {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@terra-cotta);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:@terra-cotta); 
+      }
+    }
+    .high {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@selective-yellow);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:red); 
+      }
+    }
+    .middle {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@gorse);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:@gorse); 
+      }
+    }
+    .low {
+      .radio-button-selected{
+        .circle-mixin(@width:16px,@height:16px,@color:@dark-turquoise);
+      }
+      .radio-button{
+        .circle-mixin-hover(@width:16px,@height:16px,@color:@dark-turquoise); 
+      }
+    }
+  }
+    
+
+  
+  
+  
+  

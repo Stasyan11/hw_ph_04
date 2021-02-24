@@ -1,0 +1,76 @@
+.main-timer{
+.timer-describe{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin: auto;
+     width:((474/@width)*100vw);
+     height:((136/@width)*100vw);
+
+    .tablet-min(@height:((150/@width_tablet)*100vw));
+    .desctop-min(@height:((150/@width_desctop)*100vw));
+    color:@white;
+    
+h3{
+    .font-mixin(@family:@paragraph,@weight:normal,
+    @size:((28/@width) * 100vw),@height:((32/@width) * 100vw));
+    .tablet-min(@f-size:((30/@width_tablet)*100vw));
+    .desctop-min(@f-size:((30/@width_desctop)*100vw));
+}
+p{
+    .font-mixin(@family:@paragraph,@weight:normal,
+    @size:((20/@width) * 100vw),@height:((24/@width) * 100vw));
+    .tablet-min(@f-size:((18/@width_tablet)*100vw));
+    .desctop-min(@f-size:((18/@width_desctop)*100vw));
+}
+
+
+    .timer-icons{
+        .flex-mixin(@justifay:space-between,@flex-direction:row);
+        align-items: center;
+        width:((132/@width)*100vw);
+        .tablet-min(@width:((132/@width_tablet)*100vw));
+        .desctop-min(@width:((132/@width_desctop)*100vw));
+        color:@nepal;
+    }
+    span{
+        font-size: 12px;
+        &:hover{
+            color:@malibu;
+        }
+    } 
+ }   
+
+
+
+
+.timer-content{
+    margin-top:((89/@width)*100vw);
+    margin-bottom:((260/@width)*100vw);
+    .tablet-min(@m-t:((60/@width_tablet)*100vw),@m-b:((85/@width_tablet)*100vw));
+    .desctop-min(@m-t:((60/@width_desctop)*100vw),@m-b:((85/@width_desctop)*100vw));
+    .flex-mixin(@width:100%,@justifay:space-between,@flex-direction:row);
+    >img{
+        
+        width:((254/@width)*100vw);
+        height:((254/@width)*100vw);
+       .tablet-min(@height:((254/@width_tablet)*100vw),@width:((254/@width_tablet)*100vw));
+       .desctop-min(@height:((254/@width_desctop)*100vw),@width:((254/@width_tablet)*100vw));
+    }
+
+  
+    span{
+        align-self:center;
+        font-size:((64/@width_tablet)*100vw);
+        .tablet-min(@f-size:((32/@width_tablet)*100vw));
+        .desctop-min(@f-size:((32/@width_desctop)*100vw));
+        color:@nepal;
+        &:hover{
+            color:@malibu;
+        }
+    }   
+}
+
+}
